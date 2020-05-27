@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  height: 280px;
+  opacity: 0.2;
+}
+.intro {
+  
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+.intro-text {
+  
+}
+
+.intro-heading {
+  font-size: 80px;
+}
+
+.section-heading {
+  
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.section-heading span {
+  top: 100%;
+  right: 50%;
+  position: absolute;
+  width: 40px;
+  border-bottom: 5px solid #0069D9;
+}
