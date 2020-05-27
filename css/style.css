@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 img {
-  height: 280px;
+  min-height: 380px;
   opacity: 0.2;
 }
 .intro {
