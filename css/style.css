@@ -13,6 +13,10 @@ img {
   z-index: 100;
 }
 
+.projects {
+  /* background-color: lightgray */
+}
+
 .intro-text {
   
 }
@@ -33,4 +37,17 @@ img {
   position: absolute;
   width: 40px;
   border-bottom: 5px solid #0069D9;
+}
+
+@media(min-width: 720px) {
+  .projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+
+  .item {
+    width: 48%;
+  }
 }
