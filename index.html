@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="./css/font-mfizz-2.4.1/font-mfizz.css">
     <link rel="stylesheet" href="./css/style.css" />
 
     <!-- jQuery library -->
@@ -28,36 +29,14 @@
   <body>
     <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Timeline</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-      </div>
     </nav>
   </header>
 
@@ -68,29 +47,67 @@
             <h2 class="intro-heading text-center">Hello, I am Shabab</h2>
             <p class="text-center">
               I am a freelance full-stack web developer. Previously worked in
-              Wipro Technologies as a Project Engineer.
+              Wipro Technologies as a Project Engineer for 3 years. 
             </p>
+            <p class="text-center">I have a bachelor's degree in Computer Science and Engineering.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <h2 class="text-center section-heading">Projects <span></span></h2>
       <div class="container-fluid projects-wrapper">
-        <!-- <div class="card mb-3">
-          <img class="card-img-top" src="./img/news-week.PNG" alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+
+        <div class="card item bg-dark text-white my-5 p-3">
+          <img
+            class="card-img"
+            src="./img/member-only.PNG"
+            alt="Card image"
+          />
+          <div class="card-img-overlay">
+            <h4 class="card-title">Members Only</h4>
+            <p class="card-text"> This project is developed using Ruby on Rails framework.
+              It has a authentication system, where a user can sign up and login. Some routes are protected like only the logged in user can make a new post.
             </p>
-            <a href="#" class="btn btn-primary"> <i class="fab fa-github"></i> View on Github</a>
+            <div class="d-block">
+              <span class="badge badge-info p-2">Ruby <i class="icon-ruby"></i></span>
+              <span class="badge badge-info p-2">Ruby on Rails <i class="icon-ruby-on-rails-alt"></i> </span>
+            
+              <span class="badge badge-info p-2">Heroku <i class="icon-heroku"></i> </span> <br>
+              <span class="badge badge-info p-2 mt-2">HTML <i class="fab fa-html5"></i></span>
+               <span class="badge badge-info p-2 mt-2">CSS <i class="fab fa-css3-alt"></i></span>
+          </div>
+            
+          <a href="https://github.com/alishabab/members-only" target="_blank" class="btn btn-primary mt-5">
+            <i class="fab fa-github"></i> View on Github</a
+          >
+          <a href="https://obscure-oasis-88086.herokuapp.com/" target="_blank" class="btn btn-primary mt-5">
+            <i class="fas fa-external-link-alt"></i> Live Demo </a
+          >
           </div>
         </div>
-         -->
+
+        <div class="card item bg-dark text-white my-5 p-3">
+          <img
+            class="card-img"
+            src="./img/twitter-bot.PNG"
+            alt="Card image"
+          />
+          <div class="card-img-overlay">
+            <h4 class="card-title">Twitter Bot</h4>
+            <p class="card-text"> Its a twitter bot developed using Ruby language and Twitter Api.
+            </p>
+            <div class="d-block">
+              <span class="badge badge-info p-2">Ruby <i class="icon-ruby"></i></span>
+              <span class="badge badge-info p-2"> Twitter API <i class="fab fa-twitter-square"></i> </span>
+          </div>
+            
+            <a href="https://github.com/alishabab/twitter-bot-using-ruby" target="_blank" class="btn btn-primary mt-5">
+              <i class="fab fa-github"></i> View on Github</a
+            >
+          </div>
+        </div>
         
         <div class="card item bg-dark text-white my-5 p-3">
           <img
@@ -99,16 +116,19 @@
             alt="Card image"
           />
           <div class="card-img-overlay">
-            <h4 class="card-title">Newsweek Clone</h4>
-            <p class="card-text"> In this project, I tried to clone <a href="https://thenewsweek.com">The News Week</a>'s homepage. The webpage is responsive and has 3 breakpoints 
+            <h4 class="card-title">The Next Web Clone</h4>
+            <p class="card-text"> I tried to clone <a href="https://thenextweb.com/" target="_blank" class="text-light"> <u>The Next Web</u></a>'s homepage in this project. The webpage is responsive and has 3 breakpoints 
               for small, medium and large screens.
             </p>
             <div class="d-block">
-            <span class="badge badge-info p-2">HTML</span> <span class="badge badge-info p-2">CSS</span>
+            <span class="badge badge-info p-2">HTML <i class="fab fa-html5"></i></span> <span class="badge badge-info p-2">CSS <i class="fab fa-css3-alt"></i></span>
           </div>
             
-            <a href="#" class="btn btn-primary mt-5">
+            <a href="https://github.com/alishabab/cloning-thenextweb" target="_blank" class="btn btn-primary mt-5">
               <i class="fab fa-github"></i> View on Github</a
+            >
+            <a href="https://raw.githack.com/alishabab/cloning-thenextweb/feature/index.html" target="_blank" class="btn btn-primary mt-5">
+              <i class="fas fa-external-link-alt"></i> Live Demo </a
             >
           </div>
         </div>
@@ -116,20 +136,23 @@
         <div class="card item bg-dark text-white my-5 p-3">
           <img
             class="card-img"
-            src="./img/news-week.PNG"
+            src="./img/newsweek.PNG"
             alt="Card image"
           />
           <div class="card-img-overlay">
             <h4 class="card-title">Newsweek Clone</h4>
-            <p class="card-text"> In this project, I tried to clone <a href="https://thenewsweek.com" class="text-light"><u>News Week</u> </a>'s homepage. The webpage is responsive and has 3 breakpoints 
-              for small, medium and large screens.
+            <p class="card-text"> In this project, I tried to clone <a href="https://thenewsweek.com" class="text-light"><u>News Week</u> </a>'s homepage. Bootstrap 4 is used to make the page 
+              responsive for small, medium and large screens.
             </p>
             <div class="d-block">
-            <span class="badge badge-info p-2">HTML</span> <span class="badge badge-info p-2">CSS</span>
+            <span class="badge badge-info p-2">HTML <i class="fab fa-html5"></i></span> <span class="badge badge-info p-2">CSS <i class="fab fa-css3-alt"></i></span> <span class="badge badge-info p-2">Bootstrap <i class="fab fa-bootstrap"></i></span>
           </div>
             
-            <a href="#" class="btn btn-primary mt-5">
+            <a href="https://github.com/alishabab/newsweek-clone" target="_blank" class="btn btn-primary mt-5">
               <i class="fab fa-github"></i> View on Github</a
+            >
+            <a href="https://raw.githack.com/alishabab/newsweek-clone/feature/index.html" target="_blank" class="btn btn-primary mt-5">
+              <i class="fas fa-external-link-alt"></i> Live Demo </a
             >
           </div>
         </div>
@@ -137,48 +160,58 @@
         <div class="card item bg-dark text-white my-5 p-3">
           <img
             class="card-img"
-            src="./img/news-week.PNG"
+            src="./img/tictactoe.PNG"
             alt="Card image"
           />
           <div class="card-img-overlay">
-            <h4 class="card-title">Newsweek Clone</h4>
-            <p class="card-text"> In this project, I tried to clone <a href="https://thenewsweek.com">The News Week</a>'s homepage. The webpage is responsive and has 3 breakpoints 
-              for small, medium and large screens.
+            <h4 class="card-title">Tic Tac Toe Console game</h4>
+            <p class="card-text"> Its a tic tac toe game on console, developed using object oriented concepts in Ruby language.
             </p>
             <div class="d-block">
-            <span class="badge badge-info p-2">HTML</span> <span class="badge badge-info p-2">CSS</span>
+            <span class="badge badge-info p-2">Ruby <i class="icon-ruby"></i></span>
           </div>
             
-            <a href="#" class="btn btn-primary mt-5">
+            <a href="https://github.com/alishabab/tic_tac_toe" target="_blank" class="btn btn-primary mt-5">
               <i class="fab fa-github"></i> View on Github</a
+            >
+            <a href="https://repl.it/@shababsaifi/Tic-Tac-Toe" target="_blank" class="btn btn-primary mt-5">
+              <i class="fas fa-external-link-alt"></i> Live Demo </a
             >
           </div>
         </div>
+      
+
+      
+
         <div class="card item bg-dark text-white my-5 p-3">
           <img
             class="card-img"
-            src="./img/news-week.PNG"
+            src="./img/dark.PNG"
             alt="Card image"
           />
           <div class="card-img-overlay">
-            <h4 class="card-title">Newsweek Clone</h4>
-            <p class="card-text"> In this project, I tried to clone <a href="https://thenewsweek.com">The News Week</a>'s homepage. The webpage is responsive and has 3 breakpoints 
-              for small, medium and large screens.
+            <h4 class="card-title">Basic Twitter Clone</h4>
+            <p class="card-text"> In this project I tried to mimic the basic functionality of twitter.com. A user can sign up, sign in, and make a tweet.
+          
             </p>
             <div class="d-block">
-            <span class="badge badge-info p-2">HTML</span> <span class="badge badge-info p-2">CSS</span>
+              <span class="badge badge-info p-2">Ruby <i class="icon-ruby"></i></span>
+              <span class="badge badge-info p-2">Ruby on Rails <i class="icon-ruby-on-rails-alt"></i> </span>
+              <span class="badge badge-info p-2">HTML <i class="fab fa-html5"></i></span> <br>
+              <span class="badge badge-info p-2 mt-2">CSS <i class="fab fa-css3-alt"></i></span>
           </div>
             
-            <a href="#" class="btn btn-primary mt-5">
-              <i class="fab fa-github"></i> View on Github</a
-            >
+          <a href="https://github.com/alishabab/basic-twitter" target="_blank" class="btn btn-primary mt-5">
+            <i class="fab fa-github"></i> View on Github</a
+          >
           </div>
         </div>
 
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2 class="text-center section-heading">Contact <span></span></h2>
+
     </section>
   </body>
 </html>
