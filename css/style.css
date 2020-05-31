@@ -39,7 +39,8 @@ main {
 }
 
 .intro-heading {
-  font-size: 70px;
+  font-size: 68px;
+  line-height: 1;
 }
 
 .section-heading {
@@ -62,7 +63,10 @@ main {
 
 .footer {
   height: 60px;
-  /* background-color: #0069D9; */
+  display: flex;
+  /* width: 100%; */
+  justify-content: center;
+  align-items: center;
 }
 
 @media(min-width: 720px) {
