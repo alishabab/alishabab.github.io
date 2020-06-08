@@ -79,14 +79,9 @@ main {
   }
 }
 
-/* @media (prefers-color-scheme: dark) {
-  body {
+@media (prefers-color-scheme: dark) {
+  body,footer, .intro-text {
     background-color: black;
     color: white;
   }
-
-  .intro-text {
-    background-color: black;
-    color: white;
-  }
-} */
+}
