@@ -79,9 +79,9 @@ main {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body,footer, .intro-text {
     background-color: black;
     color: white;
   }
-}
+} */
